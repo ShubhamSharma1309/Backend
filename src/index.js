@@ -1,6 +1,7 @@
 // require('dotenv').config({path : './env'}) bass yeh likh kar ke v run karenge toh run kar jayega no issue, but yeh code ki consistency ko bigarta hai,, toh iske badle isko import karke likh deta hai...
 import dotenv from "dotenv"
 import connectDB from "./db/index.js";
+import {app} from './app.js'
 dotenv.config({
     path: './.env'
 })

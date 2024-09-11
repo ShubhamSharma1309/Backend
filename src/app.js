@@ -14,6 +14,11 @@ app.use(express.urlencoded({extended : true, limit : "16kb"}))
 app.use(express.static("public"))
 app.use(cookieParser())
  
+//routes
 
+import userRouter from './routes/user.routes.js'
 
+//routes declaration 
+app.use("/api/v1/users", userRouter)
+//http://localhost:8000/api/v1/users/login  yeh se direct user routes mai jayega phir waha dekhega ki users ka baad kya likha hai,, isme login likha hai toh login route chalega phir...
 export {app}
