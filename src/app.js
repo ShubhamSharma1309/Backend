@@ -20,5 +20,8 @@ import userRouter from './routes/user.routes.js'
 
 //routes declaration 
 app.use("/api/v1/users", userRouter)
-//http://localhost:8000/api/v1/users/login  yeh se direct user routes mai jayega phir waha dekhega ki users ka baad kya likha hai,, isme login likha hai toh login route chalega phir...
+//http://localhost:8000/api/v1/users/register yeh se direct user routes mai jayega phir waha dekhega ki users ka baad kya likha hai,, isme login likha hai toh login route chalega phir...
 export {app}
+
+
+// agar kahi export default likhe hai phir export kiye hai toh jaha import kiye hai waha koi v naam se import karwa sakhte hai ,, but agar export likhe hai bass toh import karwane waqt waahi same name hona jaruri hai...
